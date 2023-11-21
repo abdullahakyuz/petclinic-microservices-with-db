@@ -47,7 +47,6 @@ services:
       kompose.service.expose: "{{ .Values.DNS_NAME }}"
       kompose.service.type: "nodeport"
       kompose.service.nodeport.port: "30001"
-	  kompose.service.expose.ingress-class-name: "nginx"
   tracing-server:
     image: openzipkin/zipkin
     ports:
